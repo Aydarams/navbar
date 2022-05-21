@@ -1,0 +1,108 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior: smooth;
+}
+
+header{
+top:0;
+left:0;
+position:fixed;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+width:100%;
+background-color: rgba(255,255,255,1);
+transition:0.5s ease;
+padding: 20px 100px;
+color: rgb(0,0s,0);
+}
+header.sticky{
+padding:4px 100px;
+background-color:rgba(0,0,0,0.5);
+
+}
+
+header.sticky,.sticky a{
+  color:#fff;
+}
+
+logo{
+font-weight: bold;
+transition: 0.6s;
+}
+nav{
+position:relative;
+display:flex;
+margin: 10px;
+justify-content:space-between;
+align-items:center ;
+}
+
+ul{
+position:relative;
+display:flex;
+justify-content:space-around;
+align-items: center;
+}
+li{
+list-style: none;
+margin-right: 20px;
+}
+a{
+text-decoration: none;
+transition:0.6s;
+}
+section {
+
+width:100vw;
+height:100vh;
+}
+.section1{
+background:rgba(0,0,0,0.5) url("./image1.jpg");
+background-size:cover ;
+background-position: center;
+background-position: fixed;
+
+}
+
+.section2{
+background:rgba(0,0,0,0.5) url("./image2.jpg");
+background-size:cover ;
+background-position: center;
+
+}
+.section3{
+background:rgba(0,0,0,0.5) url("./image3.jpg");
+background-size:cover  ;
+background-position: center;
+}
+
+.scroll-top{
+display:hide;
+}
+.scroller{
+cursor: pointer;
+background-color: rgba(0,0,0,0.5);
+color:#fff;
+position:fixed;
+display: flex;
+bottom:5%;
+right: 5%;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+justify-content: center;
+align-items: center;
+z-index: 1;
+font-weight: bold;
+font-size: 20px;
+transition:0.6s;
+border: rgba(255,255,255,1) solid 3px;
+transform: rotate(-90deg);
+
+}
+.scroller:hover {
+background-color: rgba(0,0,0,1);
+}
